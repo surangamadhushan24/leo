@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logo {
+    width: 40px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.logo-name {
+    font-family: 'Amita';
+    font-size: 25px;
+    color: white;
+    display: inline;
+}
+
+.carousel-img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-about-us {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.header-about-us {
+    font-family: 'Amita';
+    font-size: 55px;
+    font-weight: 500;
+    color: gold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.para-about-us {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container-about-us {
+    /* padding-top: 10px; */
+    height: auto;
+    margin-bottom: 15px;
+
+}
+
+.header-newsletter {
+    font-family: 'Amita';
+    color: gold;
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url("./Images/b1.jpg"); */
+    background-image: url("../Images/b1.jpg");
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-container {
+    padding: 78px;
+    font-size: 55px;
+    font-family: 'Roboto';
+    font-weight: 500 bold;
+}
+
+.jumbo {
+    position: relative;
+    z-index: 2;
+    top: -150px;
+    /* background-color: #444444; */
+    background:
+        linear-gradient(#444444, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+}
+
+.jumbo-header {
+    text-align: center;
+}
+
+.modal {
+    color: black;
+}
+
+footer a {
+    color: white;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto';
+    color: white;
+}

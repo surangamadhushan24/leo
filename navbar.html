@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leos of baddegama</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amita&family=Roboto:wght@400;500;700&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Roboto';
+            color: white;
+        }
+
+        .logo {
+            width: 40px;
+            height: 35px;
+            margin-right: 5px;
+        }
+
+        .logo-name {
+            font-family: 'Amita';
+            font-size: 25px;
+            color: white;
+            display: inline;
+        }
+
+        .carousel-img {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .img-about-us {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+
+        }
+
+        .header-about-us {
+            font-family: 'Amita';
+            font-size: 55px;
+            font-weight: 500;
+            color: gold;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .para-about-us {
+            color: white;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .container-about-us {
+            /* padding-top: 10px; */
+            height: auto;
+            margin-bottom: 15px;
+
+        }
+
+        .header-newsletter {
+            font-family: 'Amita';
+            color: gold;
+            font-size: 55px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url("./Images/b1.jpg");
+
+            /* Set a specific height */
+            min-height: 300px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-container {
+            padding: 78px;
+            font-size: 55px;
+            font-family: 'Roboto';
+            font-weight: 500 bold;
+        }
+
+        .jumbo {
+            position: relative;
+            z-index: 2;
+            top: -150px;
+            /* background-color: #444444; */
+            background:
+                linear-gradient(#444444, transparent),
+                linear-gradient(to top left, lime, transparent),
+                linear-gradient(to top right, blue, transparent);
+            background-blend-mode: screen;
+        }
+
+        .jumbo-header {
+            text-align: center;
+        }
+
+        .modal {
+            color: black;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="leoLogo.jpg" alt="">
+                    <p class="logo-name">BgLeos</p>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link mx-2" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">NewsLetter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="leaders.php">Our Leaders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Donation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="modal" data-bs-target="#myModal" class="nav-link mx-2" href="#">Join
+                                Us</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="modal" data-bs-target="#myModal-signIn" class="nav-link mx-2"
+                                href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#">Contact Us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        </ul>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carousel-img" src="./Images/background.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./Images/pic1.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./Images/image2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="mt-4 p-5  text-white rounded jumbo">
+            <h1 class="jumbo-header">We are leos of Leo Club Of Baddegama</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat..</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container container-about-us">
+            <div class="row d-sm-flex align-items-center">
+                <div class="col-md-7">
+                    <img class="img-about-us" src="Images/pic1.jpeg" alt="">
+                </div>
+                <div class="col-md-5">
+                    <h1 class="header-about-us">About us</h1>
+                    <p class="para-about-us">Founded in 2023 under Lions Clubs International, the Leo Club of Colombo
+                        Hogwarts operates as a non-profit
+                        organization with strong community values. Spearheaded by President Leo Akila Weragoda and Vice
+                        President
+                        Leo Lion Senula Deelana, and with guidance from esteemed figures like PDG Dr. Lion Lasantha
+                        Goonewardene and
+                        Leo Lion Binuja Amaranayaka, the club has swiftly grown to encompass 100 dedicated members aged
+                        18 to 30.
+                        Embodying the theme "Together We Achieve Greatness," the club focuses on community engagement
+                        and
+                        empowerment.
+                        Their initiatives bridge urgent gaps in society, reflecting a resolute commitment to driving
+                        positive
+                        change.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="header-newsletter">club NewsLetter</h1>
+        <div class="container mt-3 mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="./Images/n5.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <a href="https://anyflip.com/bookcase/tpbby">see NewsLetter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="./Images/n4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <a href="https://anyflip.com/bookcase/tpbby">see NewsLetter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="./Images/n6.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <a href="https://anyflip.com/bookcase/tpbby">see NewsLetter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="./Images/n7.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <a href="https://anyflip.com/bookcase/tpbby">see NewsLetter</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="parallax">
+            <div class="row parallax-container">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">projects</div>
+                        <div class="col-6">200</div>
+
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">Members</div>
+                        <div class="col-6">100</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container container-about-us">
+            <div class="row d-sm-flex align-items-center">
+                <div class="col-md-7">
+
+                </div>
+                <div class="col-md-5">
+    </section>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog role-document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h4 class="modal-title font-weight-bold w-100">Sign Up</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form method="post" action="index1.php">
+                        <div class="form-group">
+                            <label for="exampleInputName">Password</label>
+                            <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-primary" >Submit</button>
+            </div> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- signin -->
+    <div class="modal fade" id="myModal-signIn">
+        <div class="modal-dialog role-document">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header text-center">
+                    <h4 class="modal-title font-weight-bold w-100">Sign In</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form method="post" action="index1.php">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SignIn</button>
+                    </form>
+
+                </div>
+
+                <!-- Modal footer -->
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-primary" >Submit</button>
+            </div> -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+            <p class="text-center text-white">© 2022 Company, Inc</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
