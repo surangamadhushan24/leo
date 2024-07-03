@@ -31,7 +31,7 @@ function login($email,$password,$conn){
         while($row = mysqli_fetch_assoc($retval)){
             $name = $row["name"];
         }
-        session_start();
+        // session_start();
         $_SESSION["name"] = $name;
         return true;
         

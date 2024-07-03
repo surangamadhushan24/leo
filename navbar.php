@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="logo" src="leoLogo.jpg" alt="">
@@ -11,7 +12,7 @@
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
                 <li class="nav-item active">
-                    <a class="nav-link mx-2" aria-current="page" href="home.php">Home</a>
+                    <a class="nav-link mx-2" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="#">About Us</a>
@@ -28,14 +29,19 @@
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="#">Donation</a>
                 </li>
-                <li class="nav-item">
+
+                <?php if (!isset($_SESSION["name"])) : ?>
+                    <li class="nav-item">
                     <a class="nav-link mx-2 signup-link" href="signup.php"> join Us</a>
-
-
-                </li>
-                <li class="nav-item">
+                   </li>
+                   <li class="nav-item">
                     <a class="nav-link mx-2 signin-link" href="signin.php">Sign In</a>
-                </li>
+                   </li>
+                <?php else : ?>
+                    <li class= "nav-item"><a class="nav-link mx-2 signin-link" href="logout.php">Logout</a></li>
+                <?php endif; ?>
+
+                
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="#">Contact Us</a>
                 </li>
@@ -54,5 +60,3 @@
         </div>
     </div>
 </nav>
-
-

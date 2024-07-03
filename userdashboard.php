@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="./css/userdashboard.css">
 </head>
 
-<?php 
+<!-- <?php 
 include('navbar.php');
 
-?>
+?> -->
